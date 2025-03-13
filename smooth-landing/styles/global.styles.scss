@@ -1,0 +1,161 @@
+@import './bootstrap.styles.scss';
+$primaryColor: #2277C4;
+$accent2: #2BD6C9;
+$accent3: #2AB7D8;
+$buttonBg: #2277C4;
+$buttonBorder: 100px;
+$textPrimary: #000000;
+$textGray: #757575;
+$bgGradient: linear-gradient(180deg, #2381C4 50%, #2AD3C8 50%);
+$borderRadius: 8px; 
+$fontInterBold: "NotoSansThai-Bold";
+$fontInterRegular: "NotoSansThai-Regular";
+$fontInterMedium: "NotoSansThai-Medium";
+$fontInterLight: "NotoSansThai-Light";
+$fontThaiBold: "NotoSansThai-Bold";
+$fontThaiRegular: "NotoSansThai-Regular";
+@font-face {
+    font-family: $fontThaiBold;
+    src: local("NotoSansThai-Bold"), url(../public/fonts/NotoSansThai-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: $fontThaiRegular;
+    src: local("NotoSansThai-Regular"), url(../public/fonts/NotoSansThai-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: $fontInterBold;
+    src: local("NotoSansThai-Bold"), url(../public/fonts/NotoSansThai-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: $fontInterMedium;
+    src: local("NotoSansThai-Medium"), url(../public/fonts/NotoSansThai-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: $fontInterRegular;
+    src: local("NotoSansThai-Regular"), url(../public/fonts/NotoSansThai-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: $fontInterLight;
+    src: local("NotoSansThai-Light"), url(../public/fonts/NotoSansThai-Light.ttf) format("truetype");
+}
+
+
+
+.MuiTypography-root {
+    font-family: $fontInterRegular !important;
+}
+
+.react-multi-carousel-item{
+
+  
+
+}
+.react-multi-carousel-dot-list {
+    position: relative;
+    bottom: -48px !important;
+    @include media-breakpoint-down(lg){
+        bottom: -36px !important;
+    }
+    @include media-breakpoint-down(md){
+        bottom: -48px !important;
+    }
+
+    .react-multi-carousel-dot {
+        display: flex;
+    }
+    .react-multi-carousel-dot button{
+        background: #D0D4D4;
+        border: none !important; 
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .react-multi-carousel-dot--active button{
+        background-color: #2277C4;
+        width: 14px;
+        height: 14px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+  }
+.MuiOutlinedInput-input {
+    font-family: $fontInterRegular !important;
+    color: $textPrimary;
+    background-color: white;
+    border-radius: $borderRadius;
+}
+
+.MuiOutlinedInput-input::placeholder {
+    font-family: $fontInterRegular !important;
+    color: $textPrimary;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: none !important;
+    border-radius: $borderRadius;
+}
+
+.MuiSelect-select {
+    background-color: white !important;
+    border-radius: $borderRadius;
+}
+
+.slick-track {
+    width: max-content !important;
+   
+}
+
+.modal-dialog-centered {
+    padding: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100vw !important;
+    max-width: max-content !important;
+    @include media-breakpoint-up(lg) {
+        max-width: max-content !important;
+    }
+
+    @include media-breakpoint-up(md) {
+        max-width: none !important;
+    }
+}
+
+.modal-content {
+
+    background-color: #00000090 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    display: block !important;
+    width: 100vw !important;
+    min-height: 100vh !important;
+
+}
+
+.bodyMain {
+    background-color: white;
+    margin: 0;
+    height: auto;
+    display: block;
+    .bodyControl {
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        font-family: $fontInterRegular !important;
+        @include media-breakpoint-up(md) {
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include media-breakpoint-down(md) {
+            max-width: fit-content;
+            max-width: 100%;
+        }
+    }
+}
