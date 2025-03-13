@@ -8,7 +8,6 @@ import LandingPageComponent from "../../components/landing-page/landing-page.com
 
 // Generate dynamic metadata
 export async function generateMetadata(): Promise<Metadata> {
-
   const title = "";
   const description = "";
   const keyword = "    ";
