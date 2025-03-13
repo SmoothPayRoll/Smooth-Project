@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const title = "";
   const description = "";
-  const keyword = "";
+  const keyword = "    ";
   const imgCover = config.hostUrl + "images/share-cover.jpg";
   return {
     title: title, // Dynamic title from API
